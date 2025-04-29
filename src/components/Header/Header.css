@@ -1,0 +1,129 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.header.scrolled {
+  background-color: rgba(12, 15, 26, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 15px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  transition: var(--transition);
+}
+
+.logo:hover {
+  color: var(--color-accent);
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item a {
+  color: var(--color-text-primary);
+  font-weight: 500;
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-item a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: var(--transition);
+}
+
+.nav-item a:hover {
+  color: var(--color-accent);
+}
+
+.nav-item a:hover::after {
+  width: 100%;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-text-primary);
+  transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+    z-index: 1010;
+  }
+
+  .mobile-menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--color-bg-secondary);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .nav.mobile-active {
+    right: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .nav-item {
+    font-size: 1.2rem;
+  }
+}

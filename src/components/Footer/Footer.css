@@ -1,0 +1,27 @@
+.footer {
+  background-color: var(--color-bg-card);
+  padding: 30px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer-brand {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 25px 0;
+  }
+}
