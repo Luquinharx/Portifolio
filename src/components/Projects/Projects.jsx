@@ -6,30 +6,30 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-commerce Platform',
-      description: 'Uma plataforma de e-commerce completa com carrinho de compras, pagamentos e painel de administração.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      liveLink: '#',
-      repoLink: '#'
+      title: 'NextOne E-commerce',
+      description: 'E-commerce moderno desenvolvido com JavaScript e Node.js, oferecendo uma experiência de compra intuitiva para camisetas. Interface responsiva com CSS moderno e HTML semântico. Sistema completo de catálogo com gerenciamento de produtos e carrinho de compras integrado ao Firebase.',
+      image: '/nextonehub.PNG',
+      technologies: ['JavaScript ', 'CSS ', 'HTML ', 'Firebase'],
+      liveLink: 'https://nextone-1e5be.web.app/',
+      repoLink: 'https://github.com/Luquinharx/loja-camisetas'
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'Aplicativo de gerenciamento de tarefas com recursos de arrastar e soltar, notificações e colaboração em equipe.',
-      image: 'https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Supabase'],
-      liveLink: '#',
-      repoLink: '#'
+      title: 'GymTask',
+      description: 'Aplicativo completo para gestão de academia e atletas de triatlon desenvolvido principalmente em TypeScript. Sistema robusto de gerenciamento de alunos, exercícios e treinos personalizados com Firebase. Dashboard intuitivo para professores com métricas de desempenho em tempo real.',
+      image: '/gymtaskhub.PNG',
+      technologies: ['TypeScript ', 'React', 'Firebase', 'Node.js'],
+      liveLink: 'https://gyntask.vercel.app/',
+      repoLink: 'https://github.com/Luquinharx/GymTask'
     },
     {
       id: 3,
-      title: 'Portfolio Website',
-      description: 'Site de portfólio responsivo com animações suaves e design moderno.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'GSAP'],
-      liveLink: '#',
-      repoLink: '#'
+      title: 'Portfólio Profissional',
+      description: 'Landing page moderna desenvolvida com JavaScript e CSS, apresentando projetos e habilidades profissionais. Utiliza TypeScript para tipagem e HTML semântico. Design elegante com animações suaves, modo escuro e efeito de estrelas no background.',
+      image: '/portfolio1.PNG',
+      technologies: ['JavaScript ', 'CSS ', 'TypeScript ', 'HTML '],
+      liveLink: 'https://portifoliolucasmartins.vercel.app/',
+      repoLink: 'https://github.com/Luquinharx/Portifolio'
     }
   ];
 
