@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
-        <a href="#home" className="logo">Code by Lucas Martins</a>
+        <a href="#home" className="logo">Code by LQX</a>
         
         <div className={`mobile-menu-toggle ${mobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
           <span></span>
@@ -38,6 +38,7 @@ const Header = () => {
             <li className="nav-item"><a href="#sobre" onClick={() => setMobileMenuOpen(false)}>Sobre</a></li>
             <li className="nav-item"><a href="#habilidades" onClick={() => setMobileMenuOpen(false)}>Habilidades</a></li>
             <li className="nav-item"><a href="#projetos" onClick={() => setMobileMenuOpen(false)}>Projetos</a></li>
+            <li className="nav-item"><a href="#certificados" onClick={() => setMobileMenuOpen(false)}>Certificados</a></li>
             <li className="nav-item"><a href="#contato" onClick={() => setMobileMenuOpen(false)}>Contato</a></li>
           </ul>
         </nav>
