@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
-        <a href="#home" className="logo">Code by LQX</a>
+        <a href="#home" className="logo">Code by Lucas Martins</a>
         
         <div className={`mobile-menu-toggle ${mobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
           <span></span>
